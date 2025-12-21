@@ -43,5 +43,3 @@ int GrapsColoringGreedy(t_matr T, t_dlist* G, int ColorSize)
 
 	return 1;
 }
-
-

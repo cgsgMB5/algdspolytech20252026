@@ -1,4 +1,3 @@
-
 #ifndef _grc_h_
 
 typedef struct
@@ -18,13 +17,20 @@ typedef struct
 typedef struct
 {
 	int Size;
-	int **Table;
+	int** Table;
 } t_matr;
 
+
+void SetMatr(int Size, t_matr* M);
+void SetList(int Size, t_dlist* L);
+
 void PrintMatr(t_matr M);
+void PrintGraph(t_dlist G);
+
 void ReadFile(const char* FN, t_matr* A, t_dlist* G, int* CS);
 
 int GrapsColoringGreedy(t_matr T, t_dlist* G, int ColorSize);
 void WriteFile(const char* FN, t_matr T, t_dlist* G, int ColorSize);
+void AllUnits(void);
 
 #endif _grc_h_
